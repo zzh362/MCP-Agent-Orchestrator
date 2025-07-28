@@ -1,0 +1,1 @@
+SERVER_CONFIG_FILE = ".server_config_test.json"

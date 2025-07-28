@@ -1,0 +1,45 @@
+{
+    "fileSystem": {
+        "command": "npx",
+        "args": [
+            "-y",
+            "@modelcontextprotocol/server-filesystem",
+            "."
+        ]
+    },
+    "gmail": {
+        "command": "python",
+        "args": [
+            "./server/gmail_server.py"
+        ]
+    },
+    "google-flights": {
+        "command": "python",
+        "args": [
+            "./server/google_flights.py"
+        ]
+    },
+    "weather": {
+        "command": "python",
+        "args": [
+            "./server/weather.py"
+        ]
+    },
+    "code_executor": {
+        "command": "python",
+        "args": [
+            "./server/code_executor.py"
+        ]
+    },
+    "brave-search": {
+        "command": "npx",
+        "args": [
+            "-y",
+            "@modelcontextprotocol/server-brave-search"
+        ],
+        "env": {
+            "BRAVE_API_KEY": "YOUR_API_KEY"
+        }
+    },
+    "fetch": {"command": "uvx", "args": ["mcp-server-fetch"]}
+}

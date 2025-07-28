@@ -1,0 +1,8 @@
+{
+    "weather": {
+        "command": "python",
+        "args": [
+            "./server/weather.py"
+        ]
+    }
+}
