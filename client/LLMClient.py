@@ -13,11 +13,12 @@ from openai.types.chat import ChatCompletionChunk
 from openai.types.chat.chat_completion_chunk import ChoiceDeltaToolCall
 
 from mcp import Tool
+from util.constants import SERVER_CONFIG_FILE
 
 
 class LLMClient:
     
-    def __init__(self):
+    def __init__(self, mcp_config_file=SERVER_CONFIG_FILE):
         # 传递给模型接口的工具列表
         self.available_tools = []
         # MCPClient支持的所有工具列表
@@ -26,11 +27,12 @@ class LLMClient:
         self.mcpClient = MCPClient()
 
         self.qwenClient = QwenModel()
+        self.mcp_config_file = mcp_config_file
 
 
     # async with中的初始化方法
     async def __aenter__(self):
-        await self.mcpClient.initialize()
+        await self.mcpClient.initialize(config_file=self.mcp_config_file)
         self.tools = self.mcpClient.list_tools()
         self.available_tools = get_tools_format(self.tools, type="qwen")
         return self

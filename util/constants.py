@@ -1,1 +1,1 @@
-SERVER_CONFIG_FILE = ".server_config_test.json"
+SERVER_CONFIG_FILE = ".server_config.json"

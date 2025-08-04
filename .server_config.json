@@ -7,28 +7,10 @@
             "."
         ]
     },
-    "gmail": {
-        "command": "python",
-        "args": [
-            "./server/gmail_server.py"
-        ]
-    },
-    "google-flights": {
-        "command": "python",
-        "args": [
-            "./server/google_flights.py"
-        ]
-    },
     "weather": {
         "command": "python",
         "args": [
             "./server/weather.py"
-        ]
-    },
-    "code_executor": {
-        "command": "python",
-        "args": [
-            "./server/code_executor.py"
         ]
     },
     "brave-search": {
@@ -38,8 +20,13 @@
             "@modelcontextprotocol/server-brave-search"
         ],
         "env": {
-            "BRAVE_API_KEY": "YOUR_API_KEY"
+            "BRAVE_API_KEY": "BSAPLs6U9IdkmBc-OGLjaRlh4_yis0I"
         }
     },
-    "fetch": {"command": "uvx", "args": ["mcp-server-fetch"]}
+    "fetch": {
+        "command": "uvx", 
+        "args": [
+            "mcp-server-fetch"
+        ]
+    }
 }
