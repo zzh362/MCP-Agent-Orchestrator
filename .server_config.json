@@ -13,6 +13,18 @@
             "./server/weather.py"
         ]
     },
+    "code_executor": {
+        "command": "python",
+        "args": [
+            "./server/code_executor.py"
+        ]
+    },
+    "google-flights": {
+        "command": "python",
+        "args": [
+            "./server/google_flights/google_flights.py"
+        ]
+    },
     "brave-search": {
         "command": "npx",
         "args": [

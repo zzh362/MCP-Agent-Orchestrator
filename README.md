@@ -1,5 +1,5 @@
 # 环境激活
-.venv/bin/activate
+source .venv/bin/activate
 
 # 运行
 uv run chatApp.py
@@ -9,3 +9,6 @@ uv run gradio_app.py
 
 # 测试
 query：CA地区的天气预警信息
+
+# 航班查询测试
+mcp dev ./server/google_flights/google_flights.py
