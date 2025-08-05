@@ -11,3 +11,6 @@ wheels/
 
 # api_key
 .env
+
+# mac自带文件
+.DS_Store
